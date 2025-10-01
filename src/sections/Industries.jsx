@@ -60,7 +60,7 @@ const industries = [
 
 const IndustriesSection = () => {
   return (
-    <div style={styles.container}>
+    <div id="industries" style={styles.container}>
       {industries.map((industry, index) => (
         <div key={index} style={styles.card} className="industry-card">
           <div style={styles.icon}>{industry.icon}</div>

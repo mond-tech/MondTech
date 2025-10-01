@@ -4,7 +4,7 @@ import ai from "../assets/ai.png";
 export default function Portfolio() {
   return (
     <>
-      <div className="portfolio-container">
+      <div id="portfolio" className="portfolio-container">
         <div className="portfolio-card">
           {/* Left Content */}
           <div className="text-section">

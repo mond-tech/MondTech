@@ -14,7 +14,7 @@ export default function Navbar(){
         </div>
         <nav className="nav-links" aria-label="Primary">
           <a href="#services">Services</a>
-          <a href="#cases">Case Studies</a>
+          <a href="#portfolio">Case Studies</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#resources">Resources</a>
           <a href="#team">Team</a>

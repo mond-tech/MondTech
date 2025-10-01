@@ -56,7 +56,7 @@ export default function Services() {
   ];
 
   return (
-    <div style={styles.section}>
+    <div id="services" style={styles.section}>
       <h1 style={styles.heading}>How We Can Help</h1>
       <div style={styles.container}>
         {cards.map((card, index) => (

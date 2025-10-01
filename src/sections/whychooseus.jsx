@@ -41,7 +41,7 @@ const chooseUsData = [
 
 export default function WhyChooseUs() {
   return (
-    <div style={styles.container} className="whychooseus-container">
+    <div id="team" style={styles.container} className="whychooseus-container">
       <h1>Why MondTech Is Your Ideal Tech Partner</h1>
       <p>
         MondTech delivers innovative, reliable, and scalable technology solutions,

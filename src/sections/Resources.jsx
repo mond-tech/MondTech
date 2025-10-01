@@ -2,7 +2,7 @@ import React from "react";
 
 const Resources = () => {
   return (
-    <div style={styles.container}>
+    <div id="resources" style={styles.container}>
       {/* Background Blur Circles */}
       <div style={styles.circlePurple}></div>
       <div style={styles.circleBlue}></div>
