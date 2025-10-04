@@ -76,7 +76,7 @@ export default function Ticker() {
           .ticker-track {
             font-size: 0.9rem;
             gap: 40px;
-            animation-duration: 35s; /* slower for mobile */
+            animation-duration: 3s; /* slower for mobile */
           }
         }
       `}</style>
