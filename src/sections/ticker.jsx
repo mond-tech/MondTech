@@ -2,26 +2,23 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 
 export default function Ticker() {
+  const phrases = [
+    "Building innovative software solutions and Leveraging cloud, AI & DevOps",
+    "Crafting responsive web & mobile apps and Empowering businesses with technology",
+    "Delivering secure, scalable & efficient systems and Designing delightful user experiences",
+    "Driving digital transformation worldwide and Automating workflows with intelligence",
+    "Innovating for a smarter future and Engineering excellence every step of the way",
+  ];
+
   return (
     <div className="ticker-wrapper">
       <div className="ticker">
-        <div className="ticker-content">
-          <span className="ticker-item">
-            <FaStar /> Building innovative software solutions &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Crafting responsive web & mobile apps &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Leveraging cloud, AI & DevOps &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Delivering secure, scalable & efficient systems &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Driving digital transformation worldwide &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Building innovative software solutions &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Crafting responsive web & mobile apps &nbsp;&nbsp;&nbsp;&nbsp;
-          </span>
-          {/* <span className="ticker-item">
-            <FaStar /> Building innovative software solutions &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Crafting responsive web & mobile apps &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Leveraging cloud, AI & DevOps &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Delivering secure, scalable & efficient systems &nbsp;&nbsp;&nbsp;&nbsp;
-            <FaStar /> Driving digital transformation worldwide &nbsp;&nbsp;&nbsp;&nbsp;
-          </span> */}
+        <div className="ticker-track">
+          {phrases.map((p, i) => (
+            <span className="phrase" key={i}>
+              <FaStar /> {p}
+            </span>
+          ))}
         </div>
       </div>
 
@@ -29,10 +26,12 @@ export default function Ticker() {
         .ticker-wrapper {
           width: 100%;
           overflow: hidden;
-          background: linear-gradient(90deg, #FFD700, #FFC107, #FFA000); /* gold gradient background */
+          background: linear-gradient(90deg, #ffd700, #ffc107, #ffa000);
           padding: 10px 0;
-          max-width: 100vw;
-          box-sizing: border-box;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 2002;
         }
 
         .ticker {
@@ -40,31 +39,44 @@ export default function Ticker() {
           overflow: hidden;
         }
 
-        .ticker-content {
-          display: flex;
-          animation: scroll 4s linear infinite;
-          will-change: transform;
-        }
-
-        .ticker-item {
-          display: inline-block;
+        .ticker-track {
+          display: inline-flex;
+          align-items: center;
           white-space: nowrap;
-          color: #1a1a1a; /* dark text for contrast */
+          flex-shrink: 0;
+          color: #1a1a1a;
           font-weight: bold;
           font-size: 1rem;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-          padding-right: 100px; /* spacing between duplicates */
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+          animation: scroll 4s linear infinite; /* adjust speed here */
+          gap: 60px;
+        }
+
+        .phrase {
+          display: inline-flex;
+          align-items: center;
+          flex-shrink: 0;
+          gap: 8px;
+        }
+
+        .ticker-track:hover {
+          animation-play-state: paused;
         }
 
         @keyframes scroll {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(calc(-100% - 100vw));
+          }
         }
 
         @media (max-width: 768px) {
-          .ticker-item {
+          .ticker-track {
             font-size: 0.9rem;
-            padding-right: 60px;
+            gap: 40px;
+            animation-duration: 35s; /* slower for mobile */
           }
         }
       `}</style>
