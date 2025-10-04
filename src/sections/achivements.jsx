@@ -56,6 +56,38 @@ export default function StatsSection() {
             </p>
           </div>
         </div>
+
+        <div className="stats-container2">
+          <div className="stats-card">
+            <h2 className="stats-number">15+</h2>
+            <h3 className="stats-title">Industries Mastered</h3>
+            <p className="stats-text">
+              With our agility & engineering expertise, we equip your critical
+              business functions with customized tech, and expand digital
+              capabilities.
+            </p>
+          </div>
+
+          <div className="stats-card">
+            <h2 className="stats-number">100+</h2>
+            <h3 className="stats-title">Tech Evangelists</h3>
+            <p className="stats-text">
+              We are a dynamic team of certified cloud architects, data
+              scientists, and AI/ML specialists passionately driven to achieve
+              the best results for our clients.
+            </p>
+          </div>
+
+          <div className="stats-card">
+            <h2 className="stats-number">70+</h2>
+            <h3 className="stats-title">AI Models Deployed</h3>
+            <p className="stats-text">
+              From predictive analytics to generative AI, we've implemented
+              intelligent models that drive measurable ROI.
+            </p>
+          </div>
+        </div>
+
       </div>
 
       <style>{`
@@ -118,8 +150,20 @@ export default function StatsSection() {
           gap: 2rem;
         }
 
+        .stats-container2 {
+          max-width: 1200px;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
         @media (min-width: 768px) {
           .stats-container {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .stats-container2 {
             grid-template-columns: repeat(3, 1fr);
           }
         }
