@@ -139,7 +139,7 @@ export default function StatsSection() {
         .stats-number {
           font-size: 2.25rem;
           font-weight: 700;
-          color: #96821eff;
+          color: #ffd500ff;
           margin-bottom: 0.5rem;
         }
 

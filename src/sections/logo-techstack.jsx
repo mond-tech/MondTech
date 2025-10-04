@@ -38,15 +38,19 @@ const LogoTechStack = () => {
     sliderContainer: {
       overflow: "hidden",
       width: "100%",
+      maxWidth: "100vw",
       backgroundColor: "#000",
+      boxSizing: "border-box",
     },
     slider: {
       display: "flex",
       gap: "10px",
-      animation: "scroll 7s linear infinite", // faster scroll
+      animation: "scroll 4s linear infinite", // faster scroll
+      willChange: "transform",
     },
     box: {
       minWidth: "150px",
+      width: "150px",
       height: "150px",
       backgroundColor: "#000",
       color: "white",
@@ -62,21 +66,28 @@ const LogoTechStack = () => {
     },
     keyframes: `
       @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); } /* move full width of first set */
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-25%); } /* move 1/4 of total width since we have 4 copies */
+      }
+      @media (max-width: 768px) {
+        .logo-box {
+          min-width: 120px !important;
+          width: 120px !important;
+          height: 120px !important;
+        }
       }
     `,
   };
 
-  // Duplicate the array for smooth infinite scroll
-  const duplicatedBoxes = [...boxData, ...boxData];
+  // Duplicate the array multiple times for smooth infinite scroll with no gaps
+  const duplicatedBoxes = [...boxData, ...boxData, ...boxData, ...boxData];
 
   return (
     <div style={styles.sliderContainer}>
       <style>{styles.keyframes}</style>
       <div style={styles.slider}>
         {duplicatedBoxes.map((box, index) => (
-          <div key={index} style={styles.box}>
+          <div key={index} style={styles.box} className="logo-box">
             {box.logo}
           </div>
         ))}

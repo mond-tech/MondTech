@@ -6,34 +6,34 @@ export default function ConsultancyProcess() {
         {
             icon: (
                 <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-                    <FiMail size={28} />
+                    <FiMail size={40} />
                 </div>
             ),
             title: "Client Contact",
             text: "Clients reach out via Email or WhatsApp, sharing their requirements and ideas.",
         },
         {
-            icon: <FiMessageCircle size={28} />,
+            icon: <FiMessageCircle size={40} />,
             title: "Requirement Analysis & Consultation",
             text: "We discuss the project in detail, clarify objectives, and suggest the best approach.",
         },
         {
-            icon: <FiMap size={28} />,
+            icon: <FiMap size={40} />,
             title: "Planning & Roadmap",
             text: "We create a project plan, define milestones, and decide on the technology stack.",
         },
         {
-            icon: <FiCode size={28} />,
+            icon: <FiCode size={40} />,
             title: "Design & Development",
             text: "UI/UX designs and prototypes are created, followed by development using best practices.",
         },
         {
-            icon: <FiCheckCircle size={28} />,
+            icon: <FiCheckCircle size={40} />,
             title: "Testing & Quality Assurance",
             text: "Rigorous testing ensures a bug-free, reliable, and high-performing software product.",
         },
         {
-            icon: <FiUploadCloud size={28} />,
+            icon: <FiUploadCloud size={40} />,
             title: "Delivery & Support",
             text: "Final product is delivered, deployed, and supported with maintenance and updates as needed.",
         },

@@ -21,17 +21,21 @@ const TechStackSlider = () => {
     sliderContainer: {
       overflow: "hidden",
       width: "100%",
+      maxWidth: "100vw",
       backgroundColor: "#000",
       padding: "5px 0",
       marginBottom: "20px",
+      boxSizing: "border-box",
     },
     slider: {
       display: "flex",
       gap: "20px",
-      animation: "scroll 8s linear infinite",
+      animation: "scroll 4s linear infinite",
+      willChange: "transform",
     },
     box: {
       minWidth: "100px",
+      width: "100px",
       height: "100px",
       backgroundColor: "transparent",
       color: "white",
@@ -47,13 +51,18 @@ const TechStackSlider = () => {
     },
     keyframes: `
       @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-25%); }
+      }
+      @media (max-width: 768px) {
+        .slider-container {
+          padding: 3px 0;
+        }
       }
     `,
   };
 
-  const duplicatedBoxes = [...sliderData, ...sliderData];
+  const duplicatedBoxes = [...sliderData, ...sliderData, ...sliderData, ...sliderData];
 
   return (
     <div style={styles.sliderContainer}>

@@ -17,6 +17,7 @@ import LogoTechStack from './sections/logo-techstack';
 import ConsultancyProcess from './sections/consultancyprocess';
 import WhyChooseUs from './sections/whychooseus';
 import FAQSection from './sections/faq';
+import PopupForm from './sections/popupform';
 
 export default function App(){
   return (
@@ -30,7 +31,7 @@ export default function App(){
           <StatsSection />
           <Services />
           <TechStackSlider />
-          {/* <CaseStudies /> */}
+          <CaseStudies />
           <TechSolutions />
           <Portfolio />
           <Industries />
@@ -38,6 +39,7 @@ export default function App(){
           <ConsultancyProcess />
           <WhyChooseUs />
           <FAQSection />
+          {/* <PopupForm /> */}
           <Contact />
         </main>
       </AnimatePresence>

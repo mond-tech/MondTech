@@ -66,7 +66,8 @@ function ImageSlider(){
       position: "relative",
       overflow: "hidden",
       borderRadius: "20px",
-      boxShadow: "0 10px 25px rgba(0,0,0,0.2)"
+      boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+      boxSizing: "border-box"
     }}>
       <AnimatePresence mode="wait">
         <motion.img

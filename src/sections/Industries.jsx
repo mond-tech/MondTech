@@ -122,7 +122,7 @@ styleSheet.innerHTML = `
   }
 
   .industry-card:hover {
-    background: linear-gradient(135deg, #a88513d2, #000000ff);
+    background: linear-gradient(135deg, #dfae0ad2, #000000ff);
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   }
