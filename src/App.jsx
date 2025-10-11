@@ -18,6 +18,7 @@ import ConsultancyProcess from './sections/consultancyprocess';
 import WhyChooseUs from './sections/whychooseus';
 import FAQSection from './sections/faq';
 import PopupForm from './sections/popupform';
+import GitHubProjects from './components/GitHubProjects';
 
 export default function App(){
   return (
@@ -28,6 +29,7 @@ export default function App(){
         <main>
           <Hero />
           <LogoTechStack />
+          <GitHubProjects />
           <StatsSection />
           <Services />
           <TechStackSlider />
