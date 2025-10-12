@@ -104,3 +104,4 @@ input,textarea,select{width:100%;padding:10px;border-radius:8px;background:trans
 input::placeholder,textarea::placeholder{color:rgb(0, 0, 0)}
 button.primary{background:var(--gold);border:none;padding:10px 14px;border-radius:10px;font-weight:700;color:#0b0b0b}
 
+

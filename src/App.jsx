@@ -17,7 +17,7 @@ import LogoTechStack from './sections/logo-techstack';
 import ConsultancyProcess from './sections/consultancyprocess';
 import WhyChooseUs from './sections/whychooseus';
 import FAQSection from './sections/faq';
-import PopupForm from './sections/popupform';
+import PopupForm from './components/PopupForm';
 import GitHubProjects from './components/GitHubProjects';
 
 export default function App(){
@@ -41,11 +41,11 @@ export default function App(){
           <ConsultancyProcess />
           <WhyChooseUs />
           <FAQSection />
-          {/* <PopupForm /> */}
           <Contact />
         </main>
       </AnimatePresence>
       <Footer />
+      <PopupForm />
     </div>
   );
 }
