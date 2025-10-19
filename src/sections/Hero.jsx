@@ -20,7 +20,7 @@ export default function Hero(){
               We build modern software that powers growth
             </motion.h1>
             <p className="lead">
-              Aurea Software helps startups and enterprises ship fast — product design, 
+              MondTech helps startups and enterprises ship fast — product design, 
               engineering, and cloud operations with proven processes and measurable outcomes.
             </p>
             <div style={{display:'flex',gap:12,marginTop:18}}>

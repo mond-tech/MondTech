@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import curveLine from '../assets/curveLine.png';
+import { Stage, Layer, Line } from 'react-konva';
 
 const GitHubProjects = () => {
   // Component styles - Easy to customize!
@@ -347,6 +349,12 @@ const GitHubProjects = () => {
       <div style={responsiveStyles.container}>
         <div style={responsiveStyles.sectionHeader}>
           <h2 style={responsiveStyles.sectionTitle}>Work We've Delivered</h2>
+          {/* <img src={curveLine} /> */}
+          <Stage width={window.innerWidth} height={80}>
+          <Layer>
+            <Line points={[0, 50, 150, 0, 250, 100, 400, 50]} stroke="green" strokeWidth={3} tension={0.6} />
+          </Layer>
+        </Stage>
           <p style={responsiveStyles.sectionSubtitle}>
             Explore our open-source contributions and innovative projects
           </p>

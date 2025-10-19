@@ -9,7 +9,7 @@ export default function Navbar(){
           <img className="logo" src={logo} alt="MONDTECH Logo" />
           <div>
             <div style={{fontWeight:800}}>MondTech</div>
-            <div style={{fontSize:13,color:'var(--muted)'}}>Modern products • Trusted delivery</div>
+            <div style={{fontSize:13,color:'var(--muted)'}}>Software Solutions • Secure Development</div>
           </div>
         </div>
         <nav className="nav-links" aria-label="Primary">

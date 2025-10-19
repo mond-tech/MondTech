@@ -13,12 +13,7 @@ export default function StatsSection() {
           </div>
           <div className="intro-right">
             <p>
-              Appinventiv is one of the world’s largest AI-led IT service
-              providers helping companies redefine their digital possibilities
-              for nearly a decade now. With our team of 1600+ tech evangelists,
-              we are building the digital infrastructure of our clients using
-              intelligent, AI-native solutions, positioning them to be the
-              market leaders of their respective industries.
+              MondTech is a forward-thinking software solutions company redefining digital possibilities with AI-powered technology. Our team of passionate tech innovators is committed to building intelligent, AI-native solutions that empower businesses to streamline operations, drive growth, and stay ahead in a rapidly evolving digital landscape.
             </p>
           </div>
         </div>
