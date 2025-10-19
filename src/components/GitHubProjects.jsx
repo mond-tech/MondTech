@@ -350,11 +350,11 @@ const GitHubProjects = () => {
         <div style={responsiveStyles.sectionHeader}>
           <h2 style={responsiveStyles.sectionTitle}>Work We've Delivered</h2>
           {/* <img src={curveLine} /> */}
-          <Stage width={window.innerWidth} height={80}>
+          {/* <Stage width={window.innerWidth} height={80}>
           <Layer>
             <Line points={[0, 50, 150, 0, 250, 100, 400, 50]} stroke="green" strokeWidth={3} tension={0.6} />
           </Layer>
-        </Stage>
+        </Stage> */}
           <p style={responsiveStyles.sectionSubtitle}>
             Explore our open-source contributions and innovative projects
           </p>
