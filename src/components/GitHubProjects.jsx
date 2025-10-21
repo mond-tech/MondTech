@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import curveLine from '../assets/curveLine.png';
 import { Stage, Layer, Line } from 'react-konva';
 
 const GitHubProjects = () => {
@@ -34,7 +33,6 @@ const GitHubProjects = () => {
     sectionSubtitle: {
       fontSize: '18px',
       color: '#cfcfcf',
-      margin: '0',
       maxWidth: '600px',
       margin: '0 auto'
     },
