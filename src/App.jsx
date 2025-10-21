@@ -19,10 +19,12 @@ import WhyChooseUs from './sections/whychooseus';
 import FAQSection from './sections/faq';
 import PopupForm from './components/PopupForm';
 import GitHubProjects from './components/GitHubProjects';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App(){
   return (
     <div className="app-root">
+      <Analytics />
       <Ticker />
       <Navbar />
       <AnimatePresence mode="wait">
