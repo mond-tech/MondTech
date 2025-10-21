@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { IoClose, IoMail, IoCall, IoPerson } from 'react-icons/io5';
+import { IoClose, IoMail, IoPerson } from 'react-icons/io5';
+import { IoCall } from 'react-icons/io5';
 import img from '../assets/popup.jpg';
 
 // Popup Form Styles
