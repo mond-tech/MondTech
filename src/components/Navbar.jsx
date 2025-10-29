@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.png";
+import LanguageSwitcher from '../sections/LanguageSwitcher';
 
 export default function Navbar(){
   return (
@@ -19,6 +20,7 @@ export default function Navbar(){
           <a href="#resources">Resources</a>
           <a href="#team">Team</a>
           <a href="#contact" className="nav-cta">Get a Proposal</a>
+          <LanguageSwitcher />
         </nav>
       </div>
       <hr />

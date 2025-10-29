@@ -20,6 +20,10 @@ import FAQSection from './sections/faq';
 import PopupForm from './components/PopupForm';
 import GitHubProjects from './components/GitHubProjects';
 import { Analytics } from '@vercel/analytics/react';
+import { LocaleSwitcher } from "lingo.dev/react/client";
+
+<LocaleSwitcher locales={["en", "es"]} />;
+
 
 export default function App(){
   return (

@@ -1,0 +1,8 @@
+{
+  "models": {
+    "default": {
+      "provider": "lingo",
+      "apiKey": "${LINGODOTDEV_API_KEY}"
+    }
+  }
+}
